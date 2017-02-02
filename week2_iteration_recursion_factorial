@@ -1,0 +1,17 @@
+"""
+the first block of code is using iteration to do factorial
+the second block of code is using recursion to do factorial
+"""
+
+def factorial_iter(n):
+    prod = 1
+    for i in range(1, n+1):
+        prod *= i
+    return prod
+    
+    
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n*factorial(n-1)
