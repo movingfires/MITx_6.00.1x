@@ -1,0 +1,13 @@
+//use Newton-Raphson algorithm to find an approximate root for any polynomial
+//the code here shows use this algorithm to find square root of n, which is equal to find the root of the polynomial p(x) = x**2 - n
+
+epsilon = 0.01
+y = 24.0
+guess = y/2.0
+numGuesses = 0
+
+while abs(guess*guess - y) >= epsilon:
+    numGuesses += 1
+    guess = guess - (((guess**2) - y) / (2 * guess))
+print('numGuesses = ' + str(numGuesses))
+print('Square root of ' + str(y) + ' is about ' + str(guess))
