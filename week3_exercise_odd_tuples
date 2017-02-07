@@ -1,0 +1,12 @@
+def oddTuples(aTup):
+    '''
+    aTup: a tuple
+    
+    returns: tuple, every other element of aTup. 
+    '''
+    rTup = ()
+    i = 0
+    while i<len(aTup):
+        rTup = rTup + (aTup[i],)
+        i = i + 2
+    return rTup
