@@ -1,0 +1,18 @@
+def biggest(aDict):
+    '''
+    aDict: A dictionary, where all the values are lists.
+
+    returns: The key with the largest number of values associated with it
+    '''
+    maxvalue = 0
+    maxkey = None
+    for word in aDict:
+        valuelist = []
+        valuelist = aDict[word]
+        i = 0
+        for i in range(0, len(valuelist)):
+            i += 1
+        if i >= maxvalue:
+            maxvalue = i
+            maxkey = word
+    return maxkey
