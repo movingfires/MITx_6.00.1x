@@ -8,35 +8,28 @@ Longest substring in alphabetical order is: beggh
 In the case of ties, print the first substring. 
 For example, if s = 'abcbcd', then your program should print
 Longest substring in alphabetical order is: abc
-
-Note: This problem may be challenging. 
-We encourage you to work smart. 
-If you've spent more than a few hours on this problem, we suggest that you move on to a different part of the course. 
-If you have time, come back to this problem after you've had a break and cleared your head.
 """
-#this code still doesn't work 100% of the time for all kinds of strings
 
-s = 'azcbobobegghakl'
+# this version tracks all the substrings which are in alphabetical order
+
+s = 'xwvditdktoyhcinw'
+substring = []
 i = 0
 j = 1
-length = 0
-posi = 0
-posj = 1
 
-while (j) < len(s):
-    if s[j-1] <= s[j]:
+while j < len(s):
+    if s[j] >= s[j-1]:
         j += 1
-    elif length < j-i:
-        length = j-i
-        posi = i
-        posj = j
-        j += 1
-        i = j-1
     else:
+        substring.append(s[i:j])
+        i = j
         j += 1
-        i = j-1
+substring.append(s[i:j])
+        
+strlen = 0
+for element in substring:
+    if len(element) > strlen:
+        strlen = len(element)
+        longest = element
 
-if posi < i:
-    print('Longest substring in alphabetical order is: ' + s[posi:posj])
-else:
-    print('Longest substring in alphabetical order is: ' + s[i:j])
+print("Longest substring in alphabetical order is:", longest)
