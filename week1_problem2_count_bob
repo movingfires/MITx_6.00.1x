@@ -7,14 +7,10 @@ Number of times bob occurs is: 2
 """
 
 s = 'azcbobobegghakl'
-i = 0
 count = 0
 
-while i+2 < len(s):
-    if s[i] == 'b' and s[i+1] == 'o' and s[i+2] == 'b':
+for i in range(len(s)-2):
+    if s[i:i+3] == 'bob':
         count += 1
-        i += 1
-    else:
-        i += 1
-
-print('Number of times bob occurs is: ' + str(count))
+    
+print("Number of times bob occurs is:", count)
