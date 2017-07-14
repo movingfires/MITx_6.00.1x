@@ -1,5 +1,7 @@
-//sample code for bisection search algorithm
-//challenge: modify the code to work with cubes when 0<x<1 or x<0
+"""
+sample code for bisection search algorithm
+challenge: modify the code to work with cubes when 0<x<1 or x<0
+"""
 
 x = 25
 epsilon = 0.01
