@@ -20,6 +20,8 @@ while indicate != 'c':
     elif indicate == 'l':
         low = ans
         ans = (low + high) // 2
+    else:
+        print("Sorry, I did not understand your input.")
     print("Is your secret number "+str(ans)+"?")
     indicate = input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. ")
 
