@@ -1,4 +1,6 @@
-//this code converts integer number to binary format
+"""
+this code converts integer number to binary format
+"""
 
 num = int(input("input an integer: "))
 if num < 0:
