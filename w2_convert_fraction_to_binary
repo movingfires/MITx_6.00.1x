@@ -1,7 +1,9 @@
-//this code converts fractional number to binary format
-//it times the fractional number with a big enough power of 2 to convert the fractional number to an integer
-//then convert the integer to binary form
-//then divide back by the power of 2
+"""
+this code converts fractional number to binary format
+it times the fractional number with a big enough power of 2 to convert the fractional number to an integer
+then convert the integer to binary form
+then divide back by the power of 2
+"""
 
 x = float(input('Enter a decimal number between 0 and 1: '))
 
