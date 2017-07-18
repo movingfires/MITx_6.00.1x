@@ -5,10 +5,6 @@ def how_many(aDict):
     returns: int, how many values are in the dictionary.
     '''
     total = 0
-    for word in aDict:
-        valuelist = []
-        valuelist = aDict[word]
-        for i in range(0, len(valuelist)):
-            i += 1
-        total += i
+    for key in aDict:
+        total += len(aDict[key])
     return total
